@@ -1,0 +1,11 @@
+# test file for hp-proliant-support-pack
+---
+- hosts: all
+  remote_user: vagrant
+  sudo: true
+  roles:
+    - ../../
+  vars:
+    hp_proliant_support_pack_install:
+      - name: hpacucli
+        codename: precise
