@@ -1,0 +1,33 @@
+# tasks file for hp-proliant-support-pack
+---
+- name: add public key (repository)
+  apt_key:
+    id: B1275EA3
+    url: http://downloads.linux.hp.com/SDR/downloads/MCP/GPG-KEY-mcp
+    state: present
+  tags:
+    - configuration
+    - hp-proliant-support-pack
+    - hp-proliant-support-pack-repository-public-key
+
+- name: add repository
+  apt_repository:
+    repo: "{{ item.type }} {{ item.url }} {{ item.component }}"
+    state: present
+    update_cache: true
+  with_items: hp_proliant_support_pack_repositories
+  tags:
+    - configuration
+    - hp-proliant-support-pack
+    - hp-proliant-support-pack-repository-add
+
+- name: install
+  apt:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('latest') }}"
+    default_release: "{{ item.codename | default(ansible_lsb.codename) }}"
+  with_items: hp_proliant_support_pack_install
+  tags:
+    - configuration
+    - hp-proliant-support-pack
+    - hp-proliant-support-pack-install

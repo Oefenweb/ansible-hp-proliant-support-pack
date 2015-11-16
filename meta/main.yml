@@ -1,0 +1,17 @@
+# meta file for hp-proliant-support-pack
+---
+galaxy_info:
+  author: Mischa ter Smitten
+  company: Oefenweb.nl B.V.
+  description: Install HP Proliant support pack
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+  categories:
+    - system
+    - monitoring
+dependencies: []

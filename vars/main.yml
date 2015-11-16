@@ -1,0 +1,9 @@
+# vars file for hp-proliant-support-pack
+---
+hp_proliant_support_pack_repositories:
+  - type: deb
+    url: "http://downloads.linux.hp.com/SDR/repo/mcp/ubuntu {{ ansible_lsb.codename }}/current"
+    component: non-free
+  - type: deb
+    url: "http://downloads.linux.hp.com/SDR/repo/mcp/ubuntu precise/current"
+    component: non-free
