@@ -13,6 +13,5 @@ galaxy_info:
         - trusty
   categories:
     - system
-    - web
-    - database
+    - monitoring
 dependencies: []
