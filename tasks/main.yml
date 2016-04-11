@@ -3,7 +3,7 @@
 - name: add public key (repository)
   apt_key:
     id: B1275EA3
-    url: http://downloads.linux.hp.com/SDR/downloads/MCP/GPG-KEY-mcp
+    url: http://downloads.linux.hpe.com/SDR/repo/mcp/GPG-KEY-mcp
     state: present
   tags:
     - configuration
