@@ -2,4 +2,9 @@
 ---
 hp_proliant_support_pack_install:
   - name: hpacucli
+    # There was a reason to install from precise in trusty and xenial but I don't remember why, see:
+    #
+    # - http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu/dists/12.04-LTS/current/non-free/binary-amd64/Packages
+    # - http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu/dists/14.04-LTS/current/non-free/binary-amd64/Packages
+    # - http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu/dists/16.04-LTS/current/non-free/binary-amd64/Packages
     codename: precise
