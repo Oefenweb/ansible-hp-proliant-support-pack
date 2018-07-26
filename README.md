@@ -1,6 +1,6 @@
 ## hp-proliant-support-pack
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-hp-proliant-support-pack.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-hp-proliant-support-pack) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-hp--proliant--support--pack-blue.svg)](https://galaxy.ansible.com/list#/roles/5965)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-hp-proliant-support-pack.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-hp-proliant-support-pack) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-hp--proliant--support--pack-blue.svg)](https://galaxy.ansible.com/Oefenweb/hp-proliant-support-pack)
 
 Install HP Proliant support pack.
 
