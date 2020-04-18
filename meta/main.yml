@@ -1,6 +1,7 @@
 # meta file for hp-proliant-support-pack
 ---
 galaxy_info:
+  role_name: hp-proliant-support-pack
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Install HP Proliant support pack
