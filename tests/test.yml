@@ -3,9 +3,8 @@
 - hosts: localhost
   connection: local
   become: true
+  pre_tasks:
+    - name: include vars
+      include_vars: main.yml
   roles:
     - ../../
-  vars:
-    hp_proliant_support_pack_install:
-      - name: hpacucli
-        codename: precise
