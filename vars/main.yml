@@ -12,7 +12,7 @@ hp_proliant_support_pack_public_keys:
 
 hp_proliant_support_pack_repositories:
   - type: deb
-    url: "http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu {{ ansible_lsb.codename }}/current"
+    url: "http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu {{ ansible_distribution_release }}/current"
     component: non-free
   - type: deb
     url: "http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu precise/current"

@@ -27,7 +27,7 @@
   apt:
     name: "{{ item.name }}"
     state: "{{ item.state | default('latest') }}"
-    default_release: "{{ item.codename | default(ansible_lsb.codename) }}"
+    default_release: "{{ item.codename | default(ansible_distribution_release) }}"
   with_items: "{{ hp_proliant_support_pack_install }}"
   tags:
     - configuration

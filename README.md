@@ -15,7 +15,7 @@ None
 
 * `hp_proliant_support_pack_install`: [default: see `defaults/main.yml`]: Packages to install
 * `hp_proliant_support_pack_install.{n}.name`: [required]: Package name
-* `hp_proliant_support_pack_install.{n}.codename`: [optional, default: `ansible_lsb.codename`]: Codename of target release to use
+* `hp_proliant_support_pack_install.{n}.codename`: [optional, default: `ansible_distribution_release`]: Codename of target release to use
 * `hp_proliant_support_pack_install.{n}.state`: [optional, default: `latest`]: Indicates the desired package state
 
 ## Dependencies
