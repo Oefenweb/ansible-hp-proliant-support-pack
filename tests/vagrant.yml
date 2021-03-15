@@ -1,4 +1,4 @@
-# test file for hp-proliant-support-pack
+# test file
 ---
 - hosts: all
   remote_user: vagrant

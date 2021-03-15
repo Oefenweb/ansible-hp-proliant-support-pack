@@ -1,4 +1,4 @@
-# defaults file for hp-proliant-support-pack
+# defaults file
 ---
 hp_proliant_support_pack_install:
   - name: hpacucli

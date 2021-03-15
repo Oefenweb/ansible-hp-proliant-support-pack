@@ -1,4 +1,4 @@
-# tasks file for hp-proliant-support-pack
+# tasks file
 ---
 - name: add public key (repository)
   apt_key:

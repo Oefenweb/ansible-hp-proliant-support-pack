@@ -1,6 +1,7 @@
-# meta file for hp-proliant-support-pack
+# meta file
 ---
 galaxy_info:
+  namespace: oefenweb
   role_name: hp-proliant-support-pack
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
