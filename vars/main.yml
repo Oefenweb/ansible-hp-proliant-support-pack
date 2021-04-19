@@ -2,7 +2,7 @@
 ---
 hp_proliant_support_pack_public_keys:
   - url: http://downloads.linux.hpe.com/SDR/repo/mcp/hpPublicKey2048_key1.pub
-    id: 26C2B797
+    id: FADD8D64B1275EA3
 hp_proliant_support_pack_repositories:
   - type: deb
     url: "http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu {{ ansible_distribution_release }}/current"
