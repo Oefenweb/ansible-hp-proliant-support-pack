@@ -1,5 +1,5 @@
 # vars file
 ---
-hp_proliant_support_pack_install:
-  - name: hpacucli
-    codename: precise
+#hp_proliant_support_pack_install:
+#  - name: hpacucli
+#    codename: precise
