@@ -1,34 +1,12 @@
 # tasks file
 ---
-- name: add public key (repository)
-  apt_key:
-    id: "{{ item.id }}"
-    url: "{{ item.url }}"
-    state: present
-  with_items: "{{ hp_proliant_support_pack_public_keys }}"
+- include: repository.yml
   tags:
     - configuration
     - hp-proliant-support-pack
-    - hp-proliant-support-pack-repository-public-key
+    - hp-proliant-support-pack-repository
 
-- name: add repository
-  apt_repository:
-    repo: "{{ item.type }} {{ item.url }} {{ item.component }}"
-    state: present
-    update_cache: true
-    mode: 0644
-  with_items: "{{ hp_proliant_support_pack_repositories }}"
-  tags:
-    - configuration
-    - hp-proliant-support-pack
-    - hp-proliant-support-pack-repository-add
-
-- name: install
-  apt:
-    name: "{{ item.name }}"
-    state: "{{ item.state | default('latest') }}"
-    default_release: "{{ item.codename | default(ansible_distribution_release) }}"
-  with_items: "{{ hp_proliant_support_pack_install }}"
+- include: install.yml
   tags:
     - configuration
     - hp-proliant-support-pack
