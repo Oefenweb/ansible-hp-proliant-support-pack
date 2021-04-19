@@ -1,15 +1,9 @@
 # vars file
 ---
 hp_proliant_support_pack_public_keys:
-  - url: http://downloads.linux.hpe.com/SDR/hpPublicKey2048_key1.pub
-    id: B1275EA3
-  - url: http://downloads.linux.hpe.com/SDR/hpePublicKey2048_key1.pub
+  - url: http://downloads.linux.hpe.com/SDR/repo/mcp/hpPublicKey2048_key1.pub
     id: 26C2B797
-
 hp_proliant_support_pack_repositories:
   - type: deb
     url: "http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu {{ ansible_distribution_release }}/current"
-    component: non-free
-  - type: deb
-    url: "http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu precise/current"
     component: non-free
