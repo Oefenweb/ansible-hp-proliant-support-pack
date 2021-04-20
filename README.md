@@ -7,7 +7,8 @@ Install HP Proliant support pack.
 
 #### Requirements
 
-None
+* `software-properties-common` (will be installed)
+* `dirmngr` (will be installed)
 
 #### Variables
 
