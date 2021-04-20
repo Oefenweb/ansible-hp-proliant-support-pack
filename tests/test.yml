@@ -3,8 +3,5 @@
 - hosts: localhost
   connection: local
   become: true
-  pre_tasks:
-    - name: include vars
-      include_vars: main.yml
   roles:
     - ../../
