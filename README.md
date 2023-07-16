@@ -19,6 +19,8 @@ None
 * `hp_proliant_support_pack_install.{n}.codename`: [optional, default: `ansible_distribution_release`]: Codename of target release to use
 * `hp_proliant_support_pack_install.{n}.state`: [optional, default: `latest`]: Indicates the desired package state
 
+* `hp_proliant_support_pack_repository_version`: [default: `current`]: Repository version to use (e.g. `12.40`)
+
 ## Dependencies
 
 None

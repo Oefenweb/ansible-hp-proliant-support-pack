@@ -2,3 +2,5 @@
 ---
 hp_proliant_support_pack_install:
   - name: ssacli
+
+hp_proliant_support_pack_repository_version: current
