@@ -31,7 +31,7 @@ None
 ---
 - hosts: all
   roles:
-    - hp-proliant-support-pack
+    - oefenweb.hp-proliant-support-pack
 ```
 
 #### License
