@@ -21,9 +21,9 @@
 - name: repository | add
   ansible.builtin.apt_repository:
     repo: "{{ item.type }} {{ item.url }} {{ item.component }}"
-    state: present
+    state: "{{ item.state | default('present') }}"
     update_cache: true
-    mode: 0644
+    mode: '0644'
   with_items: "{{ hp_proliant_support_pack_repositories }}"
   tags:
     - hp-proliant-support-pack-repository-add

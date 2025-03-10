@@ -3,11 +3,16 @@
 hp_proliant_support_pack_dependencies_pre:
   - software-properties-common
   - dirmngr
+  - apt-transport-https
 
 hp_proliant_support_pack_apt_keys:
   - id: C208ADDE26C2B797
 
 hp_proliant_support_pack_repositories:
   - type: deb
+    url: "https://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu {{ ansible_distribution_release }}/{{ hp_proliant_support_pack_repository_version }}"
+    component: non-free
+  - type: deb
     url: "http://downloads.linux.hpe.com/SDR/repo/mcp/ubuntu {{ ansible_distribution_release }}/{{ hp_proliant_support_pack_repository_version }}"
     component: non-free
+    state: absent
