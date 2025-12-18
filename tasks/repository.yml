@@ -13,7 +13,7 @@
   ansible.builtin.apt_key:
     id: "{{ item.id }}"
     keyserver: "{{ apt_key_keyserver | default('keyserver.ubuntu.com') }}"
-    state: present
+    state: "{{ item.state | default('present') }}"
   with_items: "{{ hp_proliant_support_pack_apt_keys }}"
   tags:
     - hp-proliant-support-pack-repository-public-key

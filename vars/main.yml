@@ -7,6 +7,8 @@ hp_proliant_support_pack_dependencies_pre:
 
 hp_proliant_support_pack_apt_keys:
   - id: C208ADDE26C2B797
+    state: absent
+  - id: C208ADDE26C2B797
 
 hp_proliant_support_pack_repositories:
   - type: deb
